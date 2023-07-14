@@ -1,13 +1,37 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer base {
+    body {
+      font-family: "Poppins", sans-serif;
+      width: 100%;
+    }
+    @layer setIconAssets {
+      .setIcon {
+        font-size: 20px;
+        cursor: pointer;
+      }
+      .setIconAbout {
+        font-size: 45px;
+        cursor: pointer;
+      }
+      .setIconAboutHotline {
+        color: white;
+        font-size: 45px;
+        cursor: pointer;
+      }
+      .centerAll {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .fontAcount{
+        font-family: 'Inter', sans-serif;
+      }
+      .style.laguage{
+        width: 25px;
+        /* border-radius: 100rem; */
+      }
+    }
 }
